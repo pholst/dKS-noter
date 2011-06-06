@@ -156,7 +156,7 @@ INDEPENDENT SET problemet er så: \textit{Givet en urettet graf $G=(V,E)$ og et 
 \begin{proof}
  For at kunne bevise INDEPENDENT SET er i NPC, så reducerer vi fra 3SAT. Vi skal bruge en lille gadget, nemlig en trekant som dem nedenfor. Begrundelsen for dette er, at hvis grafen indeholder en trekant, så ved vi på forhånd et independent set maksimalt kan indeholde 1 af de 3 knuder i trekanten. Dette bruger vi så i beviset ved at vi begrænser den mængde af grafer vi kigger på, til kun at tillade grafer vis knuder kan opdeles i $m$ disjunkte trekanter. Således får vi at vi maksimalt kan have et independent set af størrelse $m$ (en fra hver trekant) og at denne eksisterer hvis og kun hvis kanterne i konstruktionen tillader vi kan vælge en knude fra hver trekant.
  \begin{center}
- \includegraphics[bb=0 0 842 595,scale=0.5]{./INDEPENDENTSET.png}
+ \includegraphics[bb=0 0 842 595,scale=0.5]{img/INDEPENDENTSET.png}
  % INDEPENDENTSET.png: 3508x2480 pixel, 300dpi, 29.70x21.00 cm, bb=0 0 842 595
 \end{center}
 Konstruktionen i reduktionen fra en 3SAT instans til INDEPENDENT SET kommer så nemt heraf (illustreret ovenfor). Konstruktionen er som følger:

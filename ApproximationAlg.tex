@@ -34,7 +34,7 @@ Følgende afsnit indeholder detaljer om hvert punkt i dispositionen ovenfor (og 
 
 Lad os starte med lige at kigge på de kompleksitetsklasser vi har arbejdet med her i kurset.
 \begin{center}
- \includegraphics[bb=0 0 400 400,scale=0.3]{./PNPNPC.png}
+ \includegraphics[bb=0 0 400 400,scale=0.3]{img/PNPNPC.png}
  % PNPNPC.png: 1667x1667 pixel, 300dpi, 14.11x14.11 cm, bb=0 0 400 400
 \end{center}
 
@@ -187,7 +187,7 @@ En sådan struktur får vi i form af et minimum spanning tree, da vægten af et 
 Vi bruger altså et minimum spanning tree til at konstruere en tour der er intet mere end 2 gange vægten af træet, igen antaget metric TSP.
 Følgende algoritme gør netop dette, ved at konstruere minimum spanning træet vha. MST-PRIM algoritmen der kaldes som subrutine.
 \begin{center}
- \includegraphics[bb=0 0 754 196,scale=0.5]{./approxTSPTour.png}
+ \includegraphics[bb=0 0 754 196,scale=0.5]{img/approxTSPTour.png}
  % approxTSPTour.png: 1005x261 pixel, 96dpi, 26.59x6.90 cm, bb=0 0 754 196
 \end{center}
 Altså har vi en algoritme der gør følgende:
@@ -201,19 +201,19 @@ Altså har vi en algoritme der gør følgende:
 
 Kørslen af denne algoritme er illustreret herunder:
 \begin{center}
- \includegraphics[bb=0 0 247 226,scale=0.7]{./approxTSP1.png}
+ \includegraphics[bb=0 0 247 226,scale=0.7]{img/approxTSP1.png}
  % approxTSP1.png: 330x301 pixel, 96dpi, 8.73x7.96 cm, bb=0 0 247 226
- \includegraphics[bb=0 0 247 226,scale=0.7]{./approxTSP2.png}
+ \includegraphics[bb=0 0 247 226,scale=0.7]{img/approxTSP2.png}
  % approxTSP1.png: 330x301 pixel, 96dpi, 8.73x7.96 cm, bb=0 0 247 226
- \includegraphics[bb=0 0 247 226,scale=0.7]{./approxTSP3.png}
+ \includegraphics[bb=0 0 247 226,scale=0.7]{img/approxTSP3.png}
  % approxTSP1.png: 330x301 pixel, 96dpi, 8.73x7.96 cm, bb=0 0 247 226
- \includegraphics[bb=0 0 247 226,scale=0.7]{./approxTSP4.png}
+ \includegraphics[bb=0 0 247 226,scale=0.7]{img/approxTSP4.png}
  % approxTSP1.png: 330x301 pixel, 96dpi, 8.73x7.96 cm, bb=0 0 247 226
 \end{center}
 Vi har altså ovenstående endelige tour $H$, med en samlet cost på $19.074$ (vides fra teksten). Den optimale tour $H^*$ for samme graf er dog den følgende, som har en samlet cost på kun $14.715$. Altså en godt $23\%$ bedre tour:
 
 \begin{center}
-  \includegraphics[bb=0 0 247 226,scale=0.7]{./approxTSPOpt.png}
+  \includegraphics[bb=0 0 247 226,scale=0.7]{img/approxTSPOpt.png}
  % approxTSP1.png: 330x301 pixel, 96dpi, 8.73x7.96 cm, bb=0 0 247 226
 \end{center}
 

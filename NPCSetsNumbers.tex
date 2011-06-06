@@ -29,7 +29,7 @@ Følgende afsnit indeholder detaljer om hvert punkt i dispositionen ovenfor (og 
 
 Lad os starte med lige at kigge på de kompleksitetsklasser vi har arbejdet med her i kurset.
 \begin{center}
- \includegraphics[bb=0 0 400 400,scale=0.3]{./PNPNPC.png}
+ \includegraphics[bb=0 0 400 400,scale=0.3]{img/PNPNPC.png}
  % PNPNPC.png: 1667x1667 pixel, 300dpi, 14.11x14.11 cm, bb=0 0 400 400
 \end{center}
 
@@ -155,7 +155,7 @@ Givet et boolsk kredsløb $C$, er der en inputvektor $x \in \left\lbrace 0,1 \ri
 Vi ved som sagt, at SAT er et NP-Complete problem, så kan vi bruge det til at bevise andre problemer er NP-Complete ved at reducere SAT til dem.
 Specifikt er det planen at gennemgå følgende reduktioner i løbet af dette emne:
 \begin{center}
- \includegraphics[bb=0 0 400 400,scale=0.5]{./GraphReductionTreeSetNumbers.png}
+ \includegraphics[bb=0 0 400 400,scale=0.5]{img/GraphReductionTreeSetNumbers.png}
  % GraphReductionTree.png: 1667x1667 pixel, 300dpi, 14.11x14.11 cm, bb=0 0 400 400
 \end{center}
 
@@ -228,7 +228,7 @@ Dette problem er NP-Complete, hvilket vi så nu vil vise.
 
  Måden hvorpå vi konstruerer disse instanser er vha. en såkaldt ``choice-consistency'' gadget, som illustreret nedenfor.
  \begin{center}
- \includegraphics[bb=0 0 479 422,scale=0.5]{./choiceConsistency.png}
+ \includegraphics[bb=0 0 479 422,scale=0.5]{img/choiceConsistency.png}
  % choiceConsistency.png: 1997x1760 pixel, 300dpi, 16.91x14.90 cm, bb=0 0 479 422
 \end{center}
 Konstruktionen følger så denne opskrift:
@@ -243,7 +243,7 @@ Konstruktionen følger så denne opskrift:
  Illustreret nedenfor:
 \end{enumerate}
 \begin{center}
- \includegraphics[bb=0 0 292 174]{./choiceConsistencySub.png}
+ \includegraphics[bb=0 0 292 174]{img/choiceConsistencySub.png}
  % choiceConsistencySub.png: 389x232 pixel, 96dpi, 10.29x6.14 cm, bb=0 0 292 174
 \end{center}
 
@@ -312,7 +312,7 @@ Altså har vi nu et problem hvor vi er givet et sæt af $n$ heltal $v_1,\hdots,v
 
  Vi har altså en instance af EXACT COVER BY 3-SETS med sæt $\left\lbrace S_1, S_2,\hdots,S_n \right\rbrace$, hvor vi spørger om der er disjunkte sæt hvor deres foreningsmængde er sættet $U = \left\lbrace 1, 2, \hdots, 3m \right\rbrace$. Vi tænker på disse sæt som bit vektorer i $\left\lbrace 0,1 \right\rbrace^{3m}$, således de også kan tænkes som binære heltal og forening mellem disse sæt nu ligner heltalsaddition til forveksling (eksempel ses nedenfor)
 \begin{center}
- \includegraphics[bb=0 0 389 186,scale=0.5]{./KNAPSACK.png}
+ \includegraphics[bb=0 0 389 186,scale=0.5]{img/KNAPSACK.png}
  % KNAPSACK.png: 1620x773 pixel, 300dpi, 13.72x6.54 cm, bb=0 0 389 186
 \end{center}
 Vores mål er nu at finde et subset af disse binære heltal der summerer op til $K=2^n -1$, altså en bitstreng med rene 1-taller, svarende til hele $U$. Reduktionen er nu fuldendt, men der er en mindre additionsbug. 

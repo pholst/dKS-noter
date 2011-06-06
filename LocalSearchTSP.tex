@@ -43,7 +43,7 @@ Følgende afsnit indeholder detaljer om hvert punkt i dispositionen ovenfor (og 
 
 Lad os starte med lige at kigge på de kompleksitetsklasser vi har arbejdet med her i kurset.
 \begin{center}
- \includegraphics[bb=0 0 400 400,scale=0.3]{./PNPNPC.png}
+ \includegraphics[bb=0 0 400 400,scale=0.3]{img/PNPNPC.png}
  % PNPNPC.png: 1667x1667 pixel, 300dpi, 14.11x14.11 cm, bb=0 0 400 400
 \end{center}
 
@@ -133,7 +133,7 @@ Local search er et kendt algoritmemønster til optimering, som bruges i en lang 
 \end{itemize}
 Local search algoritmen kan opskrives således:
 \begin{center}
- \includegraphics[bb=0 0 218 132]{./localSearch.png}
+ \includegraphics[bb=0 0 218 132]{img/localSearch.png}
  % localSearch.png: 291x176 pixel, 96dpi, 7.70x4.66 cm, bb=0 0 218 132
 \end{center}
 Så local search starter altså på en eller anden kandidatløsning og bevæger sig herefter fra løsning til løsning i mængden af kandidatløsninger. Dette bliver den ved med indtil den løsning den opfatter som optimal eller en givent timeout er nået.\\
@@ -285,9 +285,9 @@ De simpleste af disse algoritmer er 2-Opt og 3-Opt.\\
 ~\\
 2-Opt går ud på at slette 2 kanter, for derved at splitte touren i to, og så sætte dem sammen igen på en ny måde. Den sætter dem dog kun sammen igen, såfremt denne handling forbedrer tourens længde. Således kunne man have følgende situation:
 \begin{center}
- \includegraphics[bb=0 0 313 204,scale=0.5]{./2opt1.png}
+ \includegraphics[bb=0 0 313 204,scale=0.5]{img/2opt1.png}
  % 2opt1.png: 417x272 pixel, 96dpi, 11.03x7.20 cm, bb=0 0 313 204
- \includegraphics[bb=0 0 313 204,scale=0.5]{./2opt2.png}
+ \includegraphics[bb=0 0 313 204,scale=0.5]{img/2opt2.png}
  % 2opt1.png: 417x272 pixel, 96dpi, 11.03x7.20 cm, bb=0 0 313 204
 \end{center}
 Vi har altså planer om at slette de markerede kanter for at lægge dem på en anden måde. Vi tjekker derfor:
@@ -296,7 +296,7 @@ Vi har altså planer om at slette de markerede kanter for at lægge dem på en a
  \item Hvis $d_{\pi(t_1), \pi(t_2)} > d_{\pi(t_2), \pi(t_3)}$ eller $d_{\pi(t_3), \pi(t_4)} > d_{\pi(t_4), \pi(t_1)}$ så vil vi derimod kunne forbedre touren, hvorfor skiftet laves så vi kommer til situationen nedenfor.
 \end{enumerate}
 \begin{center}
- \includegraphics[bb=0 0 313 204,scale=0.5]{./2opt3.png}
+ \includegraphics[bb=0 0 313 204,scale=0.5]{img/2opt3.png}
  % 2opt1.png: 417x272 pixel, 96dpi, 11.03x7.20 cm, bb=0 0 313 204
 \end{center}
 

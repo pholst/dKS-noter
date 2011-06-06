@@ -128,7 +128,7 @@ Vi ved som sagt, at SAT er et NP-Complete problem, så kan vi bruge det til at
 bevise andre problemer er NP-Complete ved at reducere SAT til dem.
 Specifikt er det planen at gennemgå følgende reduktioner i løbet af dette emne:
 \begin{center}
- \includegraphics[bb=0 0 400 400,scale=0.5]{./GraphReductionTree.png}
+ \includegraphics[bb=0 0 400 400,scale=0.5]{img/GraphReductionTree.png}
  % GraphReductionTree.png: 1667x1667 pixel, 300dpi, 14.11x14.11 cm, bb=0 0 400 400
 \end{center}
 
@@ -213,7 +213,7 @@ mål $K$, er der et independent set $I$ hvor $|I|=K$?}\\
  trekant) og at denne eksisterer hvis og kun hvis kanterne i konstruktionen
  tillader vi kan vælge en knude fra hver trekant.
  \begin{center}
- \includegraphics[bb=0 0 842 595,scale=0.5]{./INDEPENDENTSET.png}
+ \includegraphics[bb=0 0 842 595,scale=0.5]{img/INDEPENDENTSET.png}
  % INDEPENDENTSET.png: 3508x2480 pixel, 300dpi, 29.70x21.00 cm, bb=0 0 842 595
 \end{center}
 Konstruktionen i reduktionen fra en 3SAT instans til INDEPENDENT SET kommer så
@@ -271,7 +271,7 @@ har den modsatte værdi heraf.\\
 I vores tilfælde gør vi dette vha. nogle gadgets. Den første af disse er en
 såkaldt ``choice gadget'', som illustreret herunder.
 \begin{center}
- \includegraphics[bb=0 0 499 842,scale=0.2]{./choiceGadget.png}
+ \includegraphics[bb=0 0 499 842,scale=0.2]{img/choiceGadget.png}
  % choiceGadget.png: 2080x3508 pixel, 300dpi, 17.61x29.70 cm, bb=0 0 499 842
 \end{center}
 Denne gadget skal så bruges som en delgraf forbundet til resten vha. de sorte
@@ -284,7 +284,7 @@ håndtere consistency. Måden hvorpå vi gør dette er vha. følgende ``consiste
 gadget''.
 
 \begin{center}
- \includegraphics[bb=0 0 173 81]{./consistencyGadget.png}
+ \includegraphics[bb=0 0 173 81]{img/consistencyGadget.png}
  % consistencyGadget.: 231x108 pixel, 96dpi, 6.11x2.86 cm, bb=0 0 173 81
 \end{center}
 
@@ -297,7 +297,7 @@ to separate kanter hvor en kant besøges af Hamilton stien og den anden gør
 ikke. Vi kan altså tænke på denne gadget som en form for XOR mellem to kanter:
 
 \begin{center}
- \includegraphics[bb=0 0 173 81]{./consistencyGadget2.png}
+ \includegraphics[bb=0 0 173 81]{img/consistencyGadget2.png}
  % consistencyGadget.: 231x108 pixel, 96dpi, 6.11x2.86 cm, bb=0 0 173 81
 \end{center}
 
@@ -310,7 +310,7 @@ også, at minimum en literal er nød til at være ``true'', da der ellers ikke e
 nogen Hamilton Path. Vores ``constraint gadget'' ser så således ud:
 
 \begin{center}
- \includegraphics[bb=0 0 241 185]{./constraintGadget.png}
+ \includegraphics[bb=0 0 241 185]{img/constraintGadget.png}
  % constraintGadget.png: 322x247 pixel, 96dpi, 8.52x6.53 cm, bb=0 0 241 185
 \end{center}
 
@@ -342,7 +342,7 @@ Hvis vi så sætter alle de her ting sammen så får vi følgende opskrift:\\
 Herefter har vi konstrueret vores graf, som er illustereret nedenfor:
 
 \begin{center}
- \includegraphics[bb=0 0 350 440]{./hamiltonPath.png}
+ \includegraphics[bb=0 0 350 440]{img/hamiltonPath.png}
  % hamiltonPath.png: 467x587 pixel, 96dpi, 12.35x15.53 cm, bb=0 0 350 440
 \end{center}
 
