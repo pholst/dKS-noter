@@ -27,14 +27,13 @@
 \BOOKMARK [1][-]{section.3}{NP-complete graph problems.}{}
 \BOOKMARK [2][-]{subsection.3.1}{Disposition}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Emne detaljer}{section.3}
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Def. P, NP, NP-hard \046 NPC}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Def. Reduktioner}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Lemma 7}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Cook's Theorem}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Proposition 9.2}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.6}{Theorem 9.4}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.7}{Theorem 9.7}{subsection.3.2}
-\BOOKMARK [3][-]{subsubsection.3.2.8}{Collary: \(TSP \040NPC\)}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Def. Reduktioner}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Lemma 7}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Cook's Theorem}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Proposition 9.2}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Theorem 9.4}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Theorem 9.7}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.7}{Collary: \(TSP \040NPC\)}{subsection.3.2}
 \BOOKMARK [1][-]{section.4}{NP-complete problems involving sets and numbers.}{}
 \BOOKMARK [2][-]{subsection.4.1}{Disposition}{section.4}
 \BOOKMARK [2][-]{subsection.4.2}{Emne detaljer}{section.4}
