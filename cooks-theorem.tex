@@ -1,0 +1,34 @@
+\subsubsection{Cook's Theorem}
+
+Det bringer os så videre til hovedemnet her, nemlig Cook's Theorem. Vi vil jo
+gerne kunne vise at diverse problemer er NP-Complete, men for at gøre det vha.
+reduktioner, så skal vi først have et NP-Complete problem at starte ud fra.
+
+Takket være Stephen Cook fik vi i 1972 netop lige det, da han viste at
+SATISFIABILITY PROBLEMET, forkortet SAT, var NP-hard. Herefter kunne mange andre
+så bruge SAT til at reducere til andre problemer, for at vise at disse nye
+problemer var NP-hard. Cook beviste oprindeligt SAT ved at vise alle problemer i
+NP reducerede til SAT, hvilket er en noget kompliceret affære. Derfor vil vi i
+stedet vise et relateret problem CIRCUIT SAT er NP-hard og så reducerer dette
+til SAT.
+
+Lad os derfor først og fremmest se på definitionerne på disse to problemer og
+derefter gå i gang med de egentlige to dele af beviset:
+
+\begin{itemize} \item CIRCUIT SAT $\in$ NPC (Theorem 11) \item CIRCUIT SAT
+$\leq$ SAT (Proposition 12) \end{itemize}
+
+\paragraph{Def. SAT} ~\\ ~\\ Givet en CNF formel, er der en tildeling af
+sandt/falsk til variablerne således hele udtrykket evaluerer til sandt?\\ ~\\
+\textit{Note: SAT $\in$ NP, siden vi kan evaluere en given boolsk funktion på
+en bitvektor i polynomiel tid og verificere hvorvidt vi har en tilfredsstillende
+tildeling. At finde en tilfredsstillende tildeling direkte kræver dog
+exhaustive search i eksponentielt mange muligheder.}
+
+\paragraph{Def. CIRCUIT SAT} ~\\ ~\\ Givet et boolsk kredsløb $C$, er der
+en inputvektor $x \in \left\lbrace 0,1 \right\rbrace^n$ således at $C(x) =
+1$? ~\\ \textit{Note: CIRCUIT SAT $\in$ NP, siden vi kan evaluere et givent
+kredsløb på en inputvektor i polynomiel tid og verificere hvorvidt vi har en
+tilfredsstillende tildeling. At finde en tilfredsstillende tildeling direkte
+kræver derimod exhaustive search eksponentielt mange muligheder.}
+

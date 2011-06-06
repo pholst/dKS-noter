@@ -1,0 +1,50 @@
+\subsubsection{Def. Reduktioner}
+
+Det bringer os så til en grundlæggende metode i computationel
+kompleksitetsteori, nemlig reduktioner. Først og fremmest den formelle
+definition.
+
+Givet to sprog $L_1$ og $L_2$, en polynomiel reduktion $r$ af $L_1$ til $L_2$ er
+en polynomial time computable map for hvilken der gælder:
+
+\begin{align*}
+ \forall x : x \in L_1 \text{ hviss. } r(x) \in L_2
+\end{align*}
+
+Dette skrives som $L_1 \leq L_2$, hvor man læser det som at $L_1$ reduceres
+til $L_2$. Intuitivt betyder reduktion blot, at vi kan oversætte enhver given
+instans af $L_1$ til en anden instans af $L_2$. Vi siger desuden, at $L_2$ er et
+mere generelt sprog end $L_1$ og kan derfor ses, som værende mere sandsynlig
+til ikke at være i $P$.
+
+
+Herudover har reduktioner desuden to nyttige egenskaber vi skal bruge senere.
+
+\paragraph{Proposition 3: Hvis $L_1 \leq L_2$ og $L_2 \leq L_3$, så gælder der
+$L_1 \leq L_3$}
+~\\
+~\\
+Denne proposition underbygger, at reduktioner er transitive. Vi beviser den
+således:
+
+\begin{proof}
+ Vi har polynomial time computable maps $r_1()$ og $r_2()$, hvor følgende ting
+gælder:
+
+\begin{itemize}
+ \item For ethvert $x$ gælder der, at $x \in L_1$ hvis og kun hvis $r_1(x) \in
+L_2$.
+ \item For ethvert $y$ gælder der, at $y \in L_2$ hvis og kun hvis $r_2(y) \in
+L_3$.
+\end{itemize}
+
+Således har vi for alle $x$, at $x \in L_1$ hvis og kun hvis $r_2(r_1(x))
+\in L_3$. Og siden vi blot har brugt to polynomial time computable maps efter
+hinanden (hvormed det hele kan ses som en polynomial time computable map), så
+har vi $L_1 \leq L_3$.
+\end{proof}
+
+\paragraph{Proposition 4: Hvis $L_1 \leq L_2$ og $L_2 \in P$, så er $L_1 \in P$.}
+
+Proposition 4 siger intuitivt, at $P$ er lukket nedad under reduktion. 
+

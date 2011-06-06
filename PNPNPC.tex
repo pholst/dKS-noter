@@ -86,76 +86,7 @@ Dette kan vi så udtrykke som et beslutningsproblem ved blot at lave en lille æ
 
 Det er dog ikke en perfekt ``stand-in'', da $L_{OPT}$ f.eks. godt kan være nem at løse uden at $OPT$ er det. Omvendt så hvis $L_{OPT}$ er svær at løse, så ved vi også $OPT$ er det. Det er således ikke muligt at bruge denne form for ``stand-in'' til at vise et givet problem er nemt at løse, men vi kan bruge det til at argumentere for et givent problem er svært.
 
-
-\subsubsection{Def. P, NP, NP-hard \& NPC}
-
-Lad os nu kigge på de kompleksitetsklasser vi har arbejdet med her i kurset.
-\begin{center}
- \includegraphics[bb=0 0 400 400,scale=0.3]{./PNPNPC.png}
- % PNPNPC.png: 1667x1667 pixel, 300dpi, 14.11x14.11 cm, bb=0 0 400 400
-\end{center}
-
-
-\paragraph{P}
-~\\
-~\\
-Kompleksitetsklassen $P$ er formelt defineret således:
-\begin{align*}
- P = \left\lbrace L \subseteq \left\lbrace 0,1 \right\rbrace^* | \exists \text{ TM } M_L \text{ der afgører L i polynomiel tid } \right\rbrace
-\end{align*}
-Altså klassen af beslutningsproblemer der kan blive bestemt af en deterministisk Turing Maskine hvor antallet af ``steps'' maskinen udfører for et givent $x$ maksimalt er $\rho(x)$ for et givent polynomiel $\rho$.\\
- 
-Intuivit ser vi kompleksitetsklassen $P$ som en klasse for problemer for hvilket vi kender en effektiv løsning. Altså ethvert problem med worst-case kørselstid på formen $O(n^k)$ for et givent $k$.
-
-At worst-case kørseltid på et problem er polynomiel betyder dog ikke reelt at det er et nemt problem (modsat hvad Cobham's Thesis påstår). I hele den analyse ignorerer vi fuldkommen konstanter, samt forventet kørselstid som I mange tilfælde kan få ``sværere'' problemer til at køre bedre end ``nemme'' problemer i $P$.
-
-
-\paragraph{NP}
-~\\
-~\\
-Kompleksitetsklassen $NP$ er lidt mere kluntet formelt defineret, så vi starter lige med intuitionen først.
-
-Intuitivt kan $NP$ ses som klassen af beslutningsproblemer for hvilket ``yes'' instanserne kan verificeres i polynomiel tid på en deterministisk Turing Maskine. Altså er det komplekse problemer med eksponentiel løbetid, men hvor løsningen til et sådant problem nemt kan verificeres til at være korrekt.\\
-~\\
-Kompleksitetsklassen $NP$ er formelt defineret således:
-\begin{align*}
-  NP = \left\lbrace L \subseteq \left\lbrace 0,1 \right\rbrace^* |
-    \exists \rho \in Z[x], L' \in P, \forall x \in \left\lbrace 0,1
-    \right\rbrace^* : ( x \in L \Leftrightarrow \exists y \in
-    \left\lbrace 0,1 \right\rbrace^* : |y| \leq \rho(|x|) \wedge
-    \left\langle x,y \right\rangle \in L') \right\rbrace
-\end{align*}
-Definitionen skal forståes således: Vi har et sprog $L' \in P$, samt et polynomiel $\rho$. Vi tænker så nu på et sæt af binære strenge af længde maksimalt $\rho(|x|)$, hvor disse representerer mulige løsninger til probleminstansen $x$. Med denne fortolkning bliver $\left\langle x,y \right\rangle \in L'$ så måden hvorpå vi tester om en given løsning $y$ virkelig er en korrekt løsning. 
-
-Denne form for søgningsproblem kaldes ofte for et simpelt søgningsproblem, da den kan verificeres i polynomiel tid, men ikke løses deri (antaget $P \neq NP$).\\
-
-For at løse et givent NP problem kunne vi så løbe igennem alle mulige løsninger for $y$, som sammenlagt ville være $2^{\rho(|x|)+1}-1$, og for hver af dem tjekke $\left\langle x,y \right\rangle \in L'$. Det ønsker vi dog ikke, da det ville tage eksponentiel tid. I stedet forsøger man ofte at finde snedige måder at lave speed-ups og/eller lave approximationsalgoritmer af forskellige art.
-
-Og i visse tilfælde er man også heldig at finde en algoritme i $P$ for et $NP$ problem, hvorved man har vist at problemet i virkeligheden ligger i $P$ som jo er et subset af $NP$.
-
-\paragraph{NP-hard}
-~\\
-~\\
-Et sprog defineres som NP-hard såfremt der gælder:
-
-\begin{align*}
- \lbrace L \subseteq \lbrace 0,1 \rbrace^* | \forall L' \in NP: L' \leq L \rbrace
-\end{align*}
-
-Altså gælder der, at ethvert sprog $L'$ i NP kan reduceres til $L$. Intuitionen er her, at algoritmen til at løse NP-hard problemet er så stærk (eller generel) at den kan bruges til at løse ethvert andet problem i NP. Man siger desuden, at et NP-hard problem således er mindre sandsynlig end noget andet sprog i NP, til at være i P.\\
-
-Navnet kan dog være lidt forvirrende, da et NP-hard problem faktisk ikke behøver være i NP og hvis de er, så kaldes de faktisk ikke engang bare NP-hard længere.
-
-\paragraph{NPC}
-~\\
-~\\
-NP-Complete (NPC) er den særlige klasse af problemer der både er NP-hard og befinder sig i NP. Formelt defineret således: 
-
-\begin{align*}
- NPC = \left\lbrace L \in \left\lbrace 0,1 \right\rbrace^* | L \in NP \wedge (\forall L' \in NP: L' \leq L) \right\rbrace
-\end{align*}
-
-NPC problemer er særligt interessante, da vi kan bruge dem til at bevise et givent problem er NP-Complete, således vi ikke spilder tid på forsøg med at finde en algoritme i $P$ for problemet (antaget $P\neq NP$). Dette gør vi vha. noget vi kalder reduktioner, som bygger på polynomial time computable maps.
+\input{def-p-np-nph-npc}
 
 \subsubsection{Def. Polynomial time computable maps}
 
@@ -174,53 +105,9 @@ Et sted polynomial time computable maps bruges er ved objekt-repræsentationer.
 
 En repræsentation af objekter (grafer, numre, etc.) som strenge kaldes ``god'' såfremt sproget af lovlige repræsentationer heraf er i P. Man kalder så to repræsentationer polynomielt ækvivalente såfremt der kan oversættes imellem dem vha. et polynomial time computable map.
 
+\input{def-reduktioner}
 
-\subsubsection{Def. Reduktioner}
-
-Det bringer os så til en grundlæggende metode i computationel kompleksitetsteori, nemlig reduktioner. Først og fremmest den formelle definition.
-
-Givet to sprog $L_1$ og $L_2$, en polynomiel reduktion $r$ af $L_1$ til $L_2$ er en polynomial time computable map for hvilken der gælder:
-
-\begin{align*}
- \forall x : x \in L_1 \text{ hviss. } r(x) \in L_2
-\end{align*}
-
-Dette skrives som $L_1 \leq L_2$, hvor man læser det som at $L_1$ reduceres til $L_2$. Intuitivt betyder reduktion blot, at vi kan oversætte enhver given instans af $L_1$ til en anden instans af $L_2$. Vi siger desuden, at $L_2$ er et mere generelt sprog end $L_1$ og kan derfor ses, som værende mere sandsynlig til ikke at være i $P$.
-
-
-Herudover har  reduktioner desuden to nyttige egenskaber vi skal bruge senere.
-
-\paragraph{Proposition 3: Hvis $L_1 \leq L_2$ og $L_2 \leq L_3$, så gælder der $L_1 \leq L_3$}
-~\\
-~\\
-Denne proposition underbygger, at reduktioner er transitive. Vi beviser den således:
-
-\begin{proof}
- Vi har polynomial time computable maps $r_1()$ og $r_2()$, hvor følgende ting gælder:
-
-\begin{itemize}
- \item For ethvert $x$ gælder der, at $x \in L_1$ hvis og kun hvis $r_1(x) \in L_2$.
- \item For ethvert $y$ gælder der, at $y \in L_2$ hvis og kun hvis $r_2(y) \in L_3$.
-\end{itemize}
-
-Således har vi for alle $x$, at $x \in L_1$ hvis og kun hvis $r_2(r_1(x)) \in L_3$. Og siden vi blot har brugt to polynomial time computable maps efter hinanden (hvormed det hele kan ses som en polynomial time computable map), så har vi $L_1 \leq L_3$.
-\end{proof}
-
-\paragraph{Proposition 4: Hvis $L_1 \leq L_2$ og $L_2 \in P$, så er $L_1 \in P$.}
-
-Proposition 4 siger intuitivt, at $P$ er lukket nedad under reduktion. 
-
-
-\subsubsection{Lemma 7}
-
-For at kunne bevise et givent sprog er NP-hard, så bruger vi  polynomielle reduktioner fra kendte NP-hard problemer, fremfor at forsøge et direkte bevis. For at kunne lave disse reduktioner, så har vi brug for følgende lemma.\\
-~\\
-\textbf{Lemma 7:} Hvis $L_1$ er NP-hard og $L_1 \leq L_2$ så er $L_2$ også NP-hard.
-
-\begin{proof}
- Siden $L_1$ er NP-hard, så ved vi alle sprog $L$ i NP kan reduceres til det ($\forall L \in NP: L \leq L_1$). Så når $L_1 \leq L_2$, så kan vi bruge transitivitetsreglen (Proposition 3) og konkludere at ethvert sprog $L$ reducerer til $L_2$ ($\forall L \in NP: L \leq L_1 \leq L_2$), hvormed $L_2$ altså er NP-hard.
-\end{proof}
-
+\input{lemma-7}
 
 \subsubsection{Proposition 5}
 

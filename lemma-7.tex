@@ -1,0 +1,17 @@
+\subsubsection{Lemma 7}
+
+For at kunne bevise et givent sprog er NP-hard, så bruger vi polynomielle
+reduktioner fra kendte NP-hard problemer, fremfor at forsøge et direkte bevis.
+For at kunne lave disse reduktioner, så har vi brug for følgende lemma.\\
+~\\
+\textbf{Lemma 7:} Hvis $L_1$ er NP-hard og $L_1 \leq L_2$ så er $L_2$ også
+NP-hard.
+
+\begin{proof}
+ Siden $L_1$ er NP-hard, så ved vi alle sprog $L$ i NP kan reduceres til
+det ($\forall L \in NP: L \leq L_1$). Så når $L_1 \leq L_2$, så kan vi
+bruge transitivitetsreglen (Proposition 3) og konkludere at ethvert sprog $L$
+reducerer til $L_2$ ($\forall L \in NP: L \leq L_1 \leq L_2$), hvormed $L_2$
+altså er NP-hard.
+\end{proof}
+
