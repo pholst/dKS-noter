@@ -1,0 +1,69 @@
+\BOOKMARK [1][-]{section.1}{P, NP and NPC.}{}
+\BOOKMARK [2][-]{subsection.1.1}{Disposition}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{Emne detaljer}{section.1}
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Def. Problemer, Sprog, Encoding \046 Stand-in Sprog}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Def. P, NP, NP-hard \046 NPC}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Def. Polynomial time computable maps}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.4}{Def. Polynomielt \346kvivalente representationer}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.5}{Def. Reduktioner}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.6}{Lemma 7}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.7}{Proposition 5}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.8}{Proposition 6}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.9}{Theorem 9.4}{subsection.1.2}
+\BOOKMARK [1][-]{section.2}{Cook's theorem and the complexity of variants of SAT.}{}
+\BOOKMARK [2][-]{subsection.2.1}{Disposition}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Emne detaljer}{section.2}
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Def. P, NP, NP-hard \046 NPC}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Def. Reduktioner}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Lemma 7}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.4}{CNF \046 Boolean Circuits}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Lemma 8}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.6}{Lemma 9}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.7}{Cook's Theorem}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.8}{Theorem 11}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.9}{Proposition 12}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.10}{Proposition 9.2}{subsection.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.11}{Andre SAT varianter}{subsection.2.2}
+\BOOKMARK [1][-]{section.3}{NP-complete graph problems.}{}
+\BOOKMARK [2][-]{subsection.3.1}{Disposition}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Emne detaljer}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Def. P, NP, NP-hard \046 NPC}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Def. Reduktioner}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Lemma 7}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Cook's Theorem}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Proposition 9.2}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Theorem 9.4}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.7}{Theorem 9.7}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.8}{Collary: \(TSP \040NPC\)}{subsection.3.2}
+\BOOKMARK [1][-]{section.4}{NP-complete problems involving sets and numbers.}{}
+\BOOKMARK [2][-]{subsection.4.1}{Disposition}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Emne detaljer}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Def. P, NP, NP-hard \046 NPC}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Def. Reduktioner}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Cook's Theorem}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Proposition 9.2}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Theorem 9.9}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Collary: Andre problemer med s\346t i NPC}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.7}{Theorem: \(EXACT COVER BY 3-SETS \040KNAPSACK\)}{subsection.4.2}
+\BOOKMARK [1][-]{section.5}{Local search heuristics for TSP}{}
+\BOOKMARK [2][-]{subsection.5.1}{Disposition}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Emne detaljer}{section.5}
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Def. P, NP, NP-hard \046 NPC}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.2}{L\370sning af NPC problemer}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Local search heuristics}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Def. TSP}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.5}{Teoretiske begr\346nsninger}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.6}{Held-Karp lower bound}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.7}{Tour Construction Heuristics}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.8}{Lokale Optimeringsalgoritmer}{subsection.5.2}
+\BOOKMARK [3][-]{subsubsection.5.2.9}{Nye optimeringstilgange}{subsection.5.2}
+\BOOKMARK [1][-]{section.6}{Approximation algorithms}{}
+\BOOKMARK [2][-]{subsection.6.1}{Disposition}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{Emne detaljer}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Def. P, NP, NP-hard \046 NPC}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.2}{L\370sning af NPC problemer}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Approximationsalgoritmer}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.4}{Approximation Schemes}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.5}{Algoritmedesign}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.6}{Relaxation af TSP}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.7}{Approximering af general TSP}{subsection.6.2}

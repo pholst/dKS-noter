@@ -1,0 +1,62 @@
+\documentclass[a4paper,danish,11pt]{article}
+
+% Skrifttype
+\usepackage{lmodern}
+
+% Understøttelse af dansk
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Matematik-udvidelser
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Graphics-udvidelser
+\usepackage{graphicx}
+
+% Hyperlink-udvidelser
+\usepackage{hyperref}
+
+% Nye kommandoer
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% Theorem udvidelser
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma} 
+\newtheorem{pro}{Proof}
+\newtheorem{dipro}[pro]{Disproof}
+
+% Source code extensions
+\usepackage{listings}
+% example {\lstset{style=JavaCode}\begin{lstlisting}public void do() { }\end{lstlisting}}
+% remember to enlose, to make \lstset arguments, "`private"'
+\usepackage{xcolor}
+\include{listingJava}
+
+\title{dKS Noter}
+\author{Michael Lind Mortensen, illio}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+ 
+\include{PNPNPC}
+
+\include{CooksSAT}
+
+\include{NPCGraph}
+
+\include{NPCSetsNumbers}
+
+\include{LocalSearchTSP}
+
+\include{ApproximationAlg}
+
+\end{document}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3608"
+       is_visible="true"
+       pattern="m -34.285714,558.79075 10,5 0,-10 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3606"
+       is_visible="true" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="372.07433"
+     inkscape:cy="267.80401"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     inkscape:window-width="973"
+     inkscape:window-height="641"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-552.36218)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path2820"
+       sodipodi:cx="208.57143"
+       sodipodi:cy="250"
+       sodipodi:rx="122.85714"
+       sodipodi:ry="122.85714"
+       d="m 331.42857,250 a 122.85714,122.85714 0 1 1 -245.714283,0 122.85714,122.85714 0 1 1 245.714283,0 z"
+       transform="translate(25.714286,529.50504)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.84600002;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3594"
+       sodipodi:cx="230"
+       sodipodi:cy="307.85715"
+       sodipodi:rx="44.285713"
+       sodipodi:ry="35"
+       d="m 274.28571,307.85715 a 44.285713,35 0 1 1 -88.57142,0 44.285713,35 0 1 1 88.57142,0 z"
+       transform="matrix(1.2714526,0,0,1.3026543,-64.576963,441.33073)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="280"
+       y="785.2193"
+       id="text3596"><tspan
+         sodipodi:role="line"
+         id="tspan3598"
+         x="280"
+         y="785.2193">NP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="214.28571"
+       y="855.2193"
+       id="text3600"><tspan
+         sodipodi:role="line"
+         id="tspan3602"
+         x="214.28571"
+         y="855.2193">P</tspan></text>
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:none"
+       d="M -7.1428569,853.79075 C 70.276616,839.13097 143.71912,802.71667 202.51507,749.57527 c 14.83275,-13.41008 28.67764,-27.77609 42.79173,-41.70841 0,0 1e-5,-10e-6 1e-5,-10e-6 21.2105,-20.92009 43.44706,-41.31187 61.89739,-65.39267 0,-1e-5 10e-6,-1e-5 10e-6,-2e-5 20.11653,-26.30317 35.12916,-56.55769 43.91898,-88.62009 l -9.67054,-2.54572 c -7.805,30.97711 -21.67756,60.50813 -40.63384,86.38431 -10e-6,10e-6 -10e-6,10e-6 -2e-5,2e-5 -17.35291,23.73224 -38.99396,44.38218 -59.85864,65.86065 -13.89603,14.29307 -27.36946,28.87216 -41.76106,42.42828 -57.01584,53.72164 -129.242269,91.55111 -206.3419469,107.80914 z"
+       id="path3604"
+       inkscape:path-effect="#path-effect3606;#path-effect3608"
+       inkscape:original-d="M -7.1428569,853.79075 C 74.10659,840.52681 143.02513,805.32581 200.85708,747.77844 c 14.15978,-14.09008 31.33643,-25.73915 42.2764,-42.06835 16.39086,-24.4653 45.12279,-39.49714 60.87803,-65.62668 16.21835,-26.89754 25.51287,-62.48064 42.27641,-87.5022" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="137.14285"
+       y="605.2193"
+       id="text3614"><tspan
+         sodipodi:role="line"
+         id="tspan3616"
+         x="137.14285"
+         y="605.2193">NP-hard</tspan></text>
+    <path
+       style="fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:1.20857143;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 115.25531,251.74081 c -2.37346,-3.84034 -2.44235,-36.25552 -0.10161,-47.80758 9.75654,-48.15049 47.39641,-86.01262 95.10147,-95.66304 19.56342,-3.95755 58.46583,-1.02049 64.72144,4.88635 1.76839,1.6698 -85.48787,88.89456 -101.61335,101.57668 -14.79207,11.63344 -37.70117,27.48427 -50.37974,34.85779 -4.87075,2.83272 -6.94887,3.41079 -7.72821,2.1498 l 0,0 z"
+       id="path3649"
+       transform="translate(0,552.36218)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-367.14148"
+       y="682.09192"
+       id="text3610"
+       transform="matrix(0.7668418,-0.64183616,0.64183616,0.7668418,0,0)"
+       inkscape:transform-center-x="-15.714286"
+       inkscape:transform-center-y="-47.142857"><tspan
+         sodipodi:role="line"
+         id="tspan3612"
+         x="-367.14148"
+         y="682.09192">NPC</tspan></text>
+  </g>
+</svg>

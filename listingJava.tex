@@ -1,0 +1,28 @@
+% JavaCode Listing Style
+% Author: Michael Dahl <micdah@gmail.com>
+% Defines a nice java code style, for usage with listings
+
+\definecolor{lstJavaCodeBasic}{rgb}{0,0,0}
+\definecolor{lstJavaCodeComment}{rgb}{0.5,0.5,0.5}
+\definecolor{lstJavaCodeComment2}{rgb}{0.0,0.4,0.5}
+\definecolor{lstJavaCodeString}{rgb}{0.0,0.5,0.683}
+\definecolor{lstJavaCodeKeyword}{rgb}{0.5,0.0,0.333}
+\definecolor{lstJavaCodeNumber}{rgb}{.33,.33,.33}
+\definecolor{lstJavaCodeRule}{rgb}{.2,.4,.6}
+\lstdefinestyle{JavaCode}{
+	language=Java,
+	numbers=left,
+	stepnumber=1,
+	firstnumber=1,
+	tabsize=4,
+	breaklines=true,
+	frame=single,
+	frameround=tttt,
+	rulecolor=\color{lstJavaCodeRule},
+	numberstyle=\color{lstJavaCodeNumber}\tiny,
+	basicstyle=\color{lstJavaCodeBasic}\sffamily\scriptsize,
+	commentstyle=\color{lstJavaCodeComment}\sffamily\textit,
+	morecomment=[s][\color{lstJavaCodeComment2}\sffamily\textit]{/**}{*/},
+	stringstyle=\color{lstJavaCodeString},
+	keywordstyle=\color{lstJavaCodeKeyword}\sffamily\textbf
+}
