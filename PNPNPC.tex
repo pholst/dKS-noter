@@ -119,7 +119,11 @@ Intuitivt kan $NP$ ses som klassen af beslutningsproblemer for hvilket ``yes'' i
 ~\\
 Kompleksitetsklassen $NP$ er formelt defineret således:
 \begin{align*}
- NP = \left\lbrace L \subseteq \left\lbrace 0,1 \right\rbrace^* | \exists \rho \in Z[x], L' \in P, \forall x \in \left\lbrace 0,1 \right\rbrace^* : ( x \in L \Leftrightarrow \exists y \in \left\lbrace 0,1 \right\rbrace^* : |y| \leq \rho(|x|) \wedge \left\langle x,y \right\rangle \in L') \right\rbrace
+  NP = \left\lbrace L \subseteq \left\lbrace 0,1 \right\rbrace^* |
+    \exists \rho \in Z[x], L' \in P, \forall x \in \left\lbrace 0,1
+    \right\rbrace^* : ( x \in L \Leftrightarrow \exists y \in
+    \left\lbrace 0,1 \right\rbrace^* : |y| \leq \rho(|x|) \wedge
+    \left\langle x,y \right\rangle \in L') \right\rbrace
 \end{align*}
 Definitionen skal forståes således: Vi har et sprog $L' \in P$, samt et polynomiel $\rho$. Vi tænker så nu på et sæt af binære strenge af længde maksimalt $\rho(|x|)$, hvor disse representerer mulige løsninger til probleminstansen $x$. Med denne fortolkning bliver $\left\langle x,y \right\rangle \in L'$ så måden hvorpå vi tester om en given løsning $y$ virkelig er en korrekt løsning. 
 
@@ -135,7 +139,7 @@ Og i visse tilfælde er man også heldig at finde en algoritme i $P$ for et $NP$
 Et sprog defineres som NP-hard såfremt der gælder:
 
 \begin{align*}
- \forall L' \in NP: L' \leq L
+ \lbrace L \subseteq \lbrace 0,1 \rbrace^* | \forall L' \in NP: L' \leq L \rbrace
 \end{align*}
 
 Altså gælder der, at ethvert sprog $L'$ i NP kan reduceres til $L$. Intuitionen er her, at algoritmen til at løse NP-hard problemet er så stærk (eller generel) at den kan bruges til at løse ethvert andet problem i NP. Man siger desuden, at et NP-hard problem således er mindre sandsynlig end noget andet sprog i NP, til at være i P.\\
@@ -283,3 +287,7 @@ Og set fra den anden side, så hvis vi ved $f$ har en tilfredstillende tildeling
 
 Vi har derved bevist at 3SAT $\leq$ INDEPENDENT SET, hvorved vi kan konkludere INDEPENDENT SET $\in$ NPC.
 \end{proof}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "Hovednoter"
+%%% End: 
