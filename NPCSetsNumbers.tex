@@ -164,31 +164,49 @@ Vi vil derfor tage et simpelt eksempel først ved at reducere til en special cas
 ~\\
 \textbf{Proposition 9.2:} 3SAT $\in$ NPC
 
-\begin{proof}
- Vi vil, som sagt, vise at 3SAT $\in$ NPC ved at lave en reduktion fra SAT, således vi bruger et polynomial time computable map til at oversætte enhver instans af SAT til en instans af 3SAT. 
+\emph{Bevis.} Vi vil, som sagt, vise at 3SAT $\in$ NPC ved at lave en reduktion fra SAT, således vi bruger et polynomial time computable map til at oversætte enhver instans af SAT til en instans af 3SAT. 
 
 Givet en CNF formel $f$ i SAT vil vi konstrukere en ny CNF formel $f' = r(x)$ i 3SAT med 3 literals i hver klausul. $r$ er således vores polynomial time computable map der ændrer følgende i $f$:\\
 
 For hver klausul $k$ i $f$ med literals $x_1, \hdots, x_{|k|}$ ændres:
 \begin{itemize}
- \item Hvis $|k| = 2$: Dupliker klausulen og tilføj en ny variabel i begge hvor den negeres i anden klausul \\
-      $(x_1 \vee x_2) \rightarrow (x_1 \vee x_2 \vee u) \wedge (x_1 \vee x_2 \vee \neg u)$
- \item Hvis $|k| = 1$: Gør som ved $|k| = 2$, men gør det to gange \\
-      $(x_1) \rightarrow (x_1 \vee u_1) \wedge (x_1 \vee \neg u_1) \rightarrow (x_1 \vee u_1 \vee u_2) \wedge (x_1 \vee u_1 \vee \neg u_2) \wedge (x_1 \vee \neg u_1 \vee u_2) \wedge (x_1 \vee \neg u_1 \vee \neg u_2)$
- \item Hvis $|k| = 3$: Gør vi ingenting
- \item Hvis $|k| > 3$: Da vi har en klausul $(x_1,\hdots,x_{|k|})$ så skal vi have en generel måde hvorpå vi kan konvertere dette til klausuler med 3 literals. Måden vi gør det på er ved at lave nye variabler $u_1,\hdots,u_{|k|-3}$ og lave en ``kaskade'' af disse:\\
-      $(x_1,\hdots,x_{|k|}) \rightarrow (x_1 \vee x_2 \vee u_1) \wedge (x_3 \vee \neg u_1 \vee u_2) \wedge \hdots \wedge (x_{k-2} \vee \neg u_{k-4} \vee u_{k-3}) \wedge (x_{k-1} \vee x_k \vee \neg u_{k-3})$ \\
-      ~\\
-      Længden af denne udvidelse er så $|k|-2$.
-      For at se at vi kan gøre dette, så skal vi kigge på hvorledes det gamle udtryk har set ud. Hvis det gamle udtryk har været sandt så har et af $x_i$'erne været sat til true. Hvis vi så sætter alle $u_i$'er til true op til punktet hvor $x_i$ blev mødt og falsk derefter, så kan vi se, at det giver et samlet sandt udtryk som før. Det betyder også at hvis ingen $x_i$'er er sat til true og det samlede udtryk derfor burde være falsk, så har vi også bibeholdt dette i oversættelsen, da alle $u_i$'erne derfor må være false.\\
-      ~\\
-      \textbf{TODO:} Ovenstående trin for $|k| > 3$ er IKKE rigtig. Jeg har ikke haft tid til at rette det.. Søg på Google og find det rigtige svar. Der findes sider der beskriver beviset.
-\end{itemize}
+\item Hvis $|k| = 2$: Dupliker klausulen og tilføj en ny variabel i
+begge hvor den negeres i anden klausul \\ $(x_1 \vee x_2) \rightarrow
+(x_1 \vee x_2 \vee u) \wedge (x_1 \vee x_2 \vee \neg u)$
+\item Hvis $|k| = 1$: Gør som ved $|k| = 2$, men gør det to gange \\
+  $(x_1) \rightarrow (x_1 \vee u_1) \wedge (x_1 \vee \neg u_1)
+  \rightarrow (x_1 \vee u_1 \vee u_2) \wedge (x_1 \vee u_1 \vee \neg
+  u_2) \wedge (x_1 \vee \neg u_1 \vee u_2) \wedge (x_1 \vee \neg u_1
+  \vee \neg u_2)$
+\item Hvis $|k| = 3$: Gør vi ingenting
+\item Hvis $|k| > 3$: Da vi har en klausul $(x_1,\hdots,x_{|k|})$ så
+  skal vi have en generel måde hvorpå vi kan konvertere dette til
+  klausuler med 3 literals. Måden vi gør det på er ved at lave nye
+  variabler $u_1,\hdots,u_{|k|-3}$ og lave en ``kaskade'' af disse:\\
+  $(x_1,\hdots,x_{|k|}) \rightarrow (x_1 \vee x_2 \vee u_1) \wedge
+  (\neg u_1 \vee x_3 \vee u_2) \wedge (\neg u_2 \vee x_4 \vee u_3 )
+  \wedge
+  \hdots \wedge (\neg u_{k-3} \vee x_{k-1} \vee x_{k} ) $ \\
+  ~\\
+  Længden af denne udvidelse er så $|k|-2$.  For at se at vi kan gøre
+  dette, så skal vi kigge på hvorledes det gamle udtryk har set
+  ud. Hvis det gamle udtryk har været sandt så har et af $x_i$'erne
+  været sat til true. Hvis vi så sætter alle $u_i$'er til true op til
+  punktet hvor $x_i$ blev mødt og falsk derefter, så kan vi se, at det
+  giver et samlet sandt udtryk som før. Det betyder også at hvis ingen
+  $x_i$'er er sat til true og det samlede udtryk derfor burde være
+  falsk, så har vi også bibeholdt dette i oversættelsen, da
+  alle $u_i$'erne derfor må være false.\\
+  ~\\
+\end{itemize} 
 
-En tilfredsstillende assignment for $f'$ vil altså også være tilfredsstillende for $f$ og vice-versa. Vi har således lavet en reduktion vha. et polynomial time computable map $r$, hvor længden af $f'$ maksimalt er $O(|f|^2)$.
+En tilfredsstillende assignment for $f'$ vil altså også være
+tilfredsstillende for $f$ og vice-versa. Vi har således lavet en
+reduktion vha. et polynomial time computable map $r$, hvor længden af
+$f'$ maksimalt er $O(|f|^2)$.
 
-Vi har derfor nu vist, at SAT $\leq$ 3SAT, hvorfor vi kan konkludere at 3SAT $\in$ NPC.
-\end{proof}
+Vi har derfor nu vist, at SAT $\leq$ 3SAT, hvorfor vi kan konkludere
+at 3SAT $\in$ NPC.
 
 \subsubsection{Theorem 9.9}
 
