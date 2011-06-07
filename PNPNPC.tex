@@ -75,13 +75,13 @@ Her har vi, at $L_f$ har en effektiv algoritme, hvis og kun hvis, $f$ har det. M
 Ligesom for arbitrære funktioner på bitstrenge, så skal vi også kunne modellere optimeringsproblemer. Lad os antage vi har fået følgende beskrivelse af et optimeringsproblem:
 
 \begin{quotation}
- \textbf{OPT:} ``Givet en inputstreng der definerer et sæt mulige løsninger $F$ og en objective funktion $f$, find $x \in F$ der maksimerer $f(x)$''.
+ \textbf{$OPT$:} ``Givet en inputstreng der definerer et sæt mulige løsninger $F$ og en objective funktion $f$, find $x \in F$ der maksimerer $f(x)$''.
 \end{quotation}
 
 Dette kan vi så udtrykke som et beslutningsproblem ved blot at lave en lille ændring.
 
 \begin{quotation}
- \textbf{OPT:} ``Givet en inputstreng der definerer $F$, $f$ og en target værdi $v \in Q$, bestem hvorvidt der er en løsning $x \in F$ således $f(x) \geq v$.''.
+ \textbf{$L_{OPT}$:} ``Givet en inputstreng der definerer $F$, $f$ og en target værdi $v \in Q$, bestem hvorvidt der er en løsning $x \in F$ således $f(x) \geq v$.''.
 \end{quotation}
 
 Det er dog ikke en perfekt ``stand-in'', da $L_{OPT}$ f.eks. godt kan være nem at løse uden at $OPT$ er det. Omvendt så hvis $L_{OPT}$ er svær at løse, så ved vi også $OPT$ er det. Det er således ikke muligt at bruge denne form for ``stand-in'' til at vise et givet problem er nemt at løse, men vi kan bruge det til at argumentere for et givent problem er svært.
